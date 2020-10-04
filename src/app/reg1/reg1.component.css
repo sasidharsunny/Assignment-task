@@ -1,0 +1,72 @@
+h1
+{
+    color: blue;
+}
+
+
+#fst {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    
+  }
+
+  #lst{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    
+  }
+
+  #gen{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    
+  }
+  #eml{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    color: black;
+    
+  }
+
+  #pass{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    
+  }
+  #cpass{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    
+  }
+  #dob{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    
+  }
+  #mob{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    
+  }
+
+  
+.bg
+{
+   /* margin-top: %; */
+   background-image: url(/assets/photo-1579546929518-9e396f3cc809.jpg);
+    /* height: 1500px; */
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* overflow: hidden; */
+   height: 100%;
+   background-size: cover;
+}

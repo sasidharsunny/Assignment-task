@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+
+       <div class="row">
+        <div class="col-6">
+            
+
+ <div class="container-fluid img">
+    
+      <h2 class="text-primary">General Information</h2>
+      
+      
+        <div class="inputBox">
+          <div class="form-group">
+          <label for="x">title</label>
+          <input type="text" placeholder="username" class="form-control">
+        </div>
+          
+        </div>
+        <div class="inputBox">
+          
+
+          <div class="centered">
+            <div class="row">
+  
+      <div class="form-group col-6">
+          <label for="x">First name</label>
+          <input type="text" placeholder="firstname" class="form-control" id="fst">
+      </div>
+  
+      <div class="form-group col-6 ">
+          <label for="lst">last name</label>
+          <input type="text" placeholder="lastname" class="form-control" id="lst">
+      </div>
+            </div>
+
+</div>
+ <!-- <label>position</label>
+ <input type="password"> -->
+ <div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Position
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Software Developer</a></li>
+    <li class="disabled"><a href="#">Software Testing</a></li>
+    <li class="active"><a href="#">Ui developer</a></li>
+    <li><a href="#"></a>Network engineer</li>
+  </ul>
+</div>
+
+<input type="text"  class="form-control" id="lst">
+
+
+<div>
+  <label>company</label>
+  <input type="password">
+ </div>
+                 
+ <div class="centered">
+  <div class="row">
+
+<div class="form-group col-6">
+<label for="x">Business Area</label>
+<input type="text"  class="form-control" id="fst">
+</div>
+
+<div class="form-group col-6 ">
+
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Employees
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">developers</a></li>
+      <li class="disabled"><a href="#">testing </a></li>
+      <li class="active"><a href="#">support</a></li>
+      <li><a href="#">costomer service </a></li>
+    </ul>
+  </div>
+<input type="text"  class="form-control" id="lst">
+</div>
+  </div>
+
+</div>          
+            
+        </div>
+
+            
+      </div>
+  
+     
+ </div>
+        
+       <div class="col-md-6">
+        <div class="container-fluid img">
+       <h2>Contact Details</h2>
+      
+       
+    
+       <div class="inputBox">
+        
+        <label for="x">Street + Nr</label>
+        <input type="text"  >
+  
+       </div>
+        </div>
+
+
+
+        <div class="inputBox">
+          
+
+          <div class="centered">
+            <div class="row">
+  
+      <div class="form-group col-6">
+      <label>Additional information</label>
+          
+          <input type="text"  class="text-dark" placeholder="Zpcode" class="form-control" id="fst">
+      </div>
+  
+      <div class="form-group col-6 ">
+          
+
+
+        <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Place
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Hyderabad</a></li>
+            <li class="disabled"><a href="#">Chennai </a></li>
+            <li class="active"><a href="#">Banglore</a></li>
+            <li><a href="#">pune</a></li>
+          </ul>
+        </div>
+      <input type="text"  class="form-control" id="lst">
+      </div>
+        </div>
+      </div>
+        <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Country
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">India</a></li>
+            <li class="disabled"><a href="#">Australia</a></li>
+            <li class="active"><a href="#">USA</a></li>
+            <li><a href="#"></a>Canada</li>
+            <li><a href="&"></a>China</li>
+          </ul>
+        </div>
+        
+        <input type="text"  class="form-control" id="lst">
+        
+        <div class="inputBox">
+          
+
+          <div class="centered">
+            <div class="row">
+  
+      <div class="form-group col-3">
+          <label for="x">code</label>
+          <input type="text"  class="form-control" id="fst">
+      </div>
+  
+      <div class="form-group col-9 ">
+          <label for="lst">Phone Number</label>
+          <input type="text" placeholder="mobile number" class="form-control" id="lst" required ngModel name="eml" #ref1="ngModel">
+     
+          <div *ngIf="ref1.invalid&&(ref1.touched||ref1.dirty)" class="alert alert-danger">
+            <div *ngIf="ref1.errors.required">*this field is mandotory</div>
+
+
+      </div>
+     
+     
+     
+     
+        </div>
+            </div>
+          </div>
+       <div>
+          <label>Email</label>
+          <input type="email" required ngModel name="email" #ref2="ngModel">
+
+          <div *ngIf="ref2.invalid&&(ref2.touched||ref1.dirty)" class="alert alert-danger">
+            <div *ngIf="ref2.errors.required">*this field is mandotory</div>
+
+
+      </div>
+
+
+
+         </div>
+
+<div class="form-group">        
+          <div class="col-sm-offset-2 col-sm-10">
+            <div class="checkbox">
+              <label><input type="checkbox" name="remember"> i agree to the terms and conditions</label>
+            </div>
+          </div>
+        </div>
+    
+<div class="text-center">
+    <button class="btn btn-success">Register Badge</button>
+</div>
+
+ </div>
+
+</div> 
+        
+        
+        
+        
+        </div>
+</div>
+
+    </div>
+        
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <div id="container">
+        <div class="row">
+            <div class="col-6">
+          <img src="/assets/dinner.jpg"   height="800px" width="500px">
+         </div>
+
+ <div class="col-md-6">
+ <h1 class="text-warning">Booking For Your Dinner</h1>
+             <div class="inputBox">
+            <div class="form-group">
+            <label class="text-white">Your Name</label>
+            <input type="text"  class="form-control">
+          </div>
+             </div>
+  
+
+                      
+        <div class="inputBox">
+            <div class="form-group">
+            <label class="text-white">Your Phone Number</label>
+            <input type="phone"  class="form-control" required ngModel #ref1="ngModel" name="phone">
+
+          <div *ngIf="ref1.invalid&&(ref1.touched||ref1.dirty)" class="alert alert-danger">
+                <div *ngIf="ref1.errors.required">*this field is mandotory</div>
+
+
+          </div>
+            </div>
+  
+
+             <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle text-white" type="button" data-toggle="dropdown">Time
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">7PM</a></li>
+                  <li class="disabled"><a href="#">8PM</a></li>
+                  <li class="active"><a href="#">9PM</a></li>
+                  <li><a href="#"></a>10PM</li>
+                </ul>
+              </div>
+              
+              <input type="text"  class="form-control" id="lst">
+
+
+              
+
+             <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle text-white" type="button" data-toggle="dropdown">Food
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">chicken biryani</a></li>
+                  <li class="disabled"><a href="#">mutton biryani</a></li>
+                  <li class="active"><a href="#">prawns biryani</a></li>
+                  <li><a href="#"></a>keema biryani</li>
+                </ul>
+              </div>
+              
+              <input type="text"  class="form-control" id="lst">
+          
+
+
+              <div>
+                <label class="text-white">Select your dinner space</label>
+              </div>
+          <div class="row">
+              
+              <button class="button button1">2</button>
+              <button class="button button1">4</button>
+              <button class="button button1">6</button>
+              <button class="button button1">8</button>
+            </div>
+            <br>
+<div>
+<button class="btn-btn melted">Booknow</button>
+</div>
+<br>
+<p class="text-info">  verify your booking info from your phone</p>
+
+</div>
+    
+
+            </div>
+
+
+        </div>
+ </div>
+</body>
+</html>

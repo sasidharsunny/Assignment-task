@@ -1,0 +1,61 @@
+
+
+
+body{
+    
+    
+    font-family: "open sans",sans-serif;
+    text-align: center;
+    font-style: oblique;
+    background-color: cyan;
+    width: auto;
+    height: 2000px;
+}
+    
+#container
+{
+    width: 1000px;
+    height: 600px;
+    background-color: white;
+    margin:0 auto;
+    top: 100px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.col-md-6{
+    background-color: cornflowerblue;
+
+    width: 90px;
+    height: 600px;
+}
+
+
+
+  
+  .bg {
+
+    background-color: blueviolet;
+  }
+/*   
+  .right {
+    right: 0%;
+    background-color: burlywood;
+  }
+   */
+
+   
+.split {
+    height: 50%;
+    width: 50%;
+    background-position: left;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .left {
+    left: 0;
+    background-color: cyan;
+  }

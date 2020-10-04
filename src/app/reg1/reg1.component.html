@@ -1,0 +1,98 @@
+
+
+
+<div class="bg">
+
+
+    <form #ref="ngForm" (ngSubmit)="submitlogForm(ref.value)">
+
+    <div class="container">
+        <h1 class="text-center">REGISTRATION FORM</h1>
+        <div class="row">
+    <div class="form-group col-6">
+        <label for="x">First name</label>
+        <input type="text" placeholder="firstname" name="first"   required  ngModel class="form-control" id="fst">
+
+    </div>
+
+    <div class="form-group col-6">
+        <label for="x">last name</label>
+        <input type="text" placeholder="lastname" class="form-control" id="lst" >
+
+    </div>
+
+
+    <div class="form-group col-6">
+        <label for="x">Gender</label>
+        <input type="text" placeholder="gender" class="form-control" id="gen">
+
+    </div>
+
+
+    <div class="form-group col-6">
+        <label for="x">Email</label>
+        <input type="text" placeholder="email" required ngModel name="email" #ref1="ngModel" class="form-control" id="eml">
+
+        <div *ngIf="ref1.invalid&&(ref1.touched||ref1.dirty)" class="alert alert-danger">
+            <div *ngIf="ref1.errors.required">*this field is mandotory</div>
+
+
+        </div>
+    </div>
+
+
+    <div class="form-group col-6">
+        <label for="x">Password</label>
+        <input type="text" placeholder="password" class="form-control" id="pass">
+ </div>
+
+    <div class="form-group col-6">
+        <label for="x">Confirm Password</label>
+        <input type="text" placeholder="confirm password" class="form-control" id="cpass"  >
+
+    </div>
+
+
+    <div class="form-group col-6">
+        <label for="x">Date of birth</label>
+        <input type="date" placeholder="DOB" class="form-control" id="dob">
+
+    </div>
+
+    <div class="form-group col-6">
+        <label for="x">Mobile</label>
+        <input type="text" #ref2="ngModel" placeholder="mobile" class="form-control"required ngModel name="mobile" id="mob">
+
+        <div *ngIf="ref2.invalid&&(ref2.touched||ref2.dirty)" class="alert alert-danger">
+            <div *ngIf="ref2.errors.required">*this field is mandotary</div>
+        </div>
+
+    </div>
+
+    <div class="form-group">        
+        <div class="col-sm-offset-2 col-sm-10">
+          <div class="checkbox">
+            <label><input type="checkbox" name="remember"> i accept the terms of use of private policy</label>
+          </div>
+        </div>
+      </div>
+  
+<br>
+
+
+
+</div>
+
+ 
+
+<div class="form-group">        
+    <div class="text-center">
+      <button class="btn btn-primary">Register</button>
+    </div>
+  </div>
+</div> 
+
+
+</form>
+
+</div>
